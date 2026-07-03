@@ -1,0 +1,46 @@
+============================================================================================
+                       TESTING PLAN LOG
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+COMPONENT 1: QUANTITY RANGE VALIDATION RULES (1 - 500)
+--------------------------------------------------------------------------------------------
+TC-01 | Input: "XLII"  | Type: Invalid Text     | Expected: Fail | Actual: Fail | Status: PASS
+TC-02 | Input: "1.5"   | Type: Invalid Decimal  | Expected: Fail | Actual: Fail | Status: PASS
+TC-03 | Input: "0"     | Type: Out of Bounds    | Expected: Fail | Actual: Fail | Status: PASS
+TC-04 | Input: "1"     | Type: Min Boundary     | Expected: Pass | Actual: Pass | Status: PASS
+TC-05 | Input: "2"     | Type: Normal Valid     | Expected: Pass | Actual: Pass | Status: PASS
+TC-06 | Input: "500"   | Type: Max Boundary     | Expected: Pass | Actual: Pass | Status: PASS
+TC-07 | Input: "501"   | Type: Out of Bounds    | Expected: Fail | Actual: Fail | Status: PASS
+
+--------------------------------------------------------------------------------------------
+COMPONENT 2: 2D LIST DATA TRACKING AND RECORD INDEXING
+--------------------------------------------------------------------------------------------
+TC-08 | Input: Multiple rows of simulated hire records
+• Type of Test:      Functional Component Integration Test
+• Test Input Data:   Row 0: ("Aroha Smith", "HRE-101", "Studio Tripod", "15")
+                     Row 1: ("John Doe", "HRE-102", "Lighting Rig Set", "5")
+• Expected Outcome:  Data appends successfully. Terminal prints a structured 
+                     database table automatically mapping sequential row index 
+                     numbers (0, 1...) to the records for future deletion tracking.
+• Actual Outcome:    Terminal printed a perfect tabular console database grid showing 
+                     row index 0 and 1 assigned correctly to their respective packets.
+• Pass / Fail:       PASS
+
+
+
+COMPONENT 3 : GUI DESIGN & STRUCTURAL USER FEEDBACK ITERATIONS
+--------------------------------------------------------------------------------------------
+TC-12 | Test: Iteration 1 Layout 
+• Purpose:           Verify basic window creation, entry box inputs, and console mapping.
+• Expected Outcome:  Tkinter window loads. Typing in fields and clicking submit prints
+                     the string entries into the terminal workspace cleanly.
+• Actual Outcome:    
+• Pass / Fail:       
+
+TC-13 | Test: Iteration 2 Refined Layout (Based on User Feedback)
+• Purpose:           Implement layout adjustments, visual frames, popups, and database grid.
+• Expected Outcome:  The GUI is updated based on feedback. Error alerts trigger visibly
+                     on screen instead of hidden console logs, and table expands.
+• Actual Outcome:    
+• Pass / Fail:       

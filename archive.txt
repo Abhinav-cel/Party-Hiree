@@ -1,0 +1,2 @@
+Archived/Returned - Name: John Smith, Receipt: 106, Item: books, Qty: 23
+Archived/Returned - Name: Adam, Receipt: 105, Item: clothes, Qty: 13
